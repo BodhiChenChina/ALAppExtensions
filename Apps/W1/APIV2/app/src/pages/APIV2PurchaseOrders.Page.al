@@ -11,7 +11,12 @@ page 30066 "APIV2 - Purchase Orders"
     PageType = API;
     SourceTable = "Purchase Order Entity Buffer";
     Extensible = false;
-
+    /* //Bodhi20230308 
+    change from
+    ActionContext.SetObjectId(Page::"APIV2 - Purchase Invoices");
+    to
+    ActionContext.SetObjectId(Page::"APIV2 - Purchase Orders");
+    */
     layout
     {
         area(Content)
