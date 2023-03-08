@@ -744,7 +744,8 @@ page 30066 "APIV2 - Purchase Orders"
     var
     begin
         ActionContext.SetObjectType(ObjectType::Page);
-        ActionContext.SetObjectId(Page::"APIV2 - Purchase Invoices");
+        //ActionContext.SetObjectId(Page::"APIV2 - Purchase Invoices");//Bodhi20230308
+        ActionContext.SetObjectId(Page::"APIV2 - Purchase Orders");//Bodhi20230308
         ActionContext.AddEntityKey(FieldNo(Id), InvoiceId);
         ActionContext.SetResultCode(WebServiceActionResultCode::Deleted);
     end;
